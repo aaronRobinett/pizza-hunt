@@ -9,13 +9,13 @@ router
     .route('/:pizzaId')
     .post(addComment);
 
-// /api/comment/<pizzaId>/<commentId>
+// /api/comments/<pizzaId>/<commentId>
 router
     .route('/:pizzaId/:commentId')
     .put(addReply)
     .delete(removeComment);
 
-// /api/comment/<pizzaId>/<commentId>/<replyId>
+// /api/comments/<pizzaId>/<commentId>/<replyId>
 router
     .route('/:pizzaId/:commentId/:replyId')
     .delete(removeReply)
